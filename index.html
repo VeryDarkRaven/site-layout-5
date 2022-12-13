@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<title>Site layout 5</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<div class="container">
+				<div class="header__logo">
+					<a href="#">
+						<img src="image/logo.webp" alt="logo">
+					</a>
+				</div>
+	
+				<nav class="header__nav">
+					<ul>
+						<a href="#"><li>about</li></a>
+						<a href="#"><li>studio</li></a>
+						<a href="#"><li>pricing</li></a>
+						<a href="#"><li>blog</li></a>
+						<a href="#" class="nav__join">
+							<li>
+								<span class="join__container">
+									Join
+									
+									<span class="arrow">
+										<span></span>
+									</span>
+								</span>
+							</li>
+						</a>
+					</ul>
+				</nav>
+
+				<div class="header__burger"><span></span></div>
+			</div>
+		</header>
+
+		<section class="front">
+			<div class="front__bg">
+				<div class="bg__filter"></div>
+				<img src="image/front/bg-1.webp" alt="bg 1">
+				<img src="image/front/bg-2.webp" alt="bg 2">
+				<img src="image/front/bg-3.webp" alt="bg 3">
+			</div>
+
+			<div class="container container_column-center container_full-height">
+				<div class="front__text">
+					<h1>Push yourself & your designs</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam provident numquam quidem accusantium esse quas temporibus quod aut a ullam laboriosam eveniet, suscipit, qui voluptas ex sunt! Mollitia, voluptatibus enim!</p>
+				</div>
+
+				<div class="front__form">
+					<form action="#" method="get">
+						<ul class="form__dropdown">
+							<label class="dropdown__header">
+								<input type="text" name="style" value="" id="style" placeholder="Design Style" readonly>
+
+								<span class="arrow">
+									<span></span>
+								</span>
+							</label>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+
+						<label class="form__email-container">
+							<input type="email" name="email" placeholder="Email" class="form__email">
+
+							<span class="arrow">
+								<span></span>
+							</span>
+						</label>
+
+						<button type="submit">
+							<span class="arrow">
+								<span></span>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="down-button">
+				<a href="#latest">
+					<span class="arrow_bg">
+						<span class="arrow">
+							<span></span>
+						</span>
+					</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="latest" id="latest">
+			<div class="container container_full-height">
+				<div class="section__title">
+					<h2 class="title">Latest design style</h2>
+					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex deserunt commodi, dignissimos qui illo aliquid error cupiditate natus, alias magnam totam. Earum dicta labore minus non ducimus eveniet obcaecati.</p>
+				</div>
+
+				<div class="latest__image-container">
+					<img src="image/latest/1.webp" alt="phone" class="latest__image">
+				</div>
+			</div>
+
+			<div class="down-button">
+				<a href="#highlights">
+					<span class="arrow_bg">
+						<span class="arrow">
+							<span></span>
+						</span>
+					</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="highlights" id="highlights">
+			<div class="container container_full-height container_column-center">
+				<div class="section__title">
+					<h2 class="title">Features of app</h2>
+					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex deserunt commodi, dignissimos qui illo aliquid error cupiditate natus, alias magnam totam. Earum dicta labore minus non ducimus eveniet obcaecati.</p>
+				</div>
+
+				<div class="highlights__columns">
+					<div class="column">
+						<div class="column__image">
+							<img src="image/highlights/1.webp" alt="1">
+						</div>
+
+						<div class="column__title">
+							<p>Lorem ipsum dolor sit</p>
+						</div>
+
+						<div class="column__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="column__image">
+							<img src="image/highlights/2.webp" alt="2">
+						</div>
+
+						<div class="column__title">
+							<p>Ametconsectetur</p>
+						</div>
+
+						<div class="column__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="column__image">
+							<img src="image/highlights/3.webp" alt="3">
+						</div>
+
+						<div class="column__title">
+							<p>lorem ipsum dolor sit</p>
+						</div>
+
+						<div class="column__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="column__image">
+							<img src="image/highlights/4.webp" alt="4">
+						</div>
+
+						<div class="column__title">
+							<p>lorem ipsum dolor sit</p>
+						</div>
+
+						<div class="column__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+			</div>
+
+			<div class="down-button">
+				<a href="#features">
+					<span class="arrow_bg">
+						<span class="arrow">
+							<span></span>
+						</span>
+					</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="container container_full-height container_column-center">
+				<div class="section__title">
+					<h2 class="title">Our design guidelines</h2>
+					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex deserunt commodi, dignissimos qui illo aliquid error cupiditate natus, alias magnam totam. Earum dicta labore minus non ducimus eveniet obcaecati.</p>
+				</div>
+
+				<div class="features__tabs">
+					<div class="tabs__buttons">
+						<ul>
+							<li class="active"><p>Development</p></li>
+							<li><p>Design</p></li>
+							<li><p>Business</p></li>
+							<li><p>Arts</p></li>
+						</ul>
+					</div>
+
+					<div class="tabs__items">
+						<div class="element-group">
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Development listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Development listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Development listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="element-group">
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Design listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Design listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Design listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="element-group">
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Business listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Business listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Business listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="element-group">
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Arts listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Arts listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<div class="item__image">
+									<a href="#">
+										<img src="image/front/bg-2.webp" alt="">
+									</a>
+								</div>
+
+								<a href="#">
+									<span class="item__description">
+										<p>Arts listing one</p>
+	
+										<span class="description__arrow">
+											<span class="arrow">
+												<span></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="scripts/front.js"></script>
+		<script src="scripts/header.js"></script>
+		<script src="scripts/features.js"></script>
+	</body>
+</html>
