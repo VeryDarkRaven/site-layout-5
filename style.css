@@ -112,6 +112,10 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #000;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .container {
   width: 75%;
   margin: 0 auto;
@@ -332,10 +336,6 @@ header .container {
   display: none;
 }
 
-body.lock {
-  overflow: hidden;
-}
-
 .header_translucent {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 0 0;
@@ -554,6 +554,7 @@ body.lock {
   border: 2px solid #28c8c6;
   border: none !important;
   animation: none;
+  cursor: text;
 }
 .front__form .form__email-container .arrow span {
   background-color: #28c8c6;
@@ -597,6 +598,7 @@ body.lock {
   transform: translate(0, -50%);
   border: 2px solid #28c8c6;
   animation: none;
+  cursor: pointer;
 }
 .front__form .form__dropdown .dropdown__header .arrow span {
   background-color: #28c8c6;
@@ -1015,6 +1017,7 @@ body.lock {
   top: -30%;
   transform: skewY(-20deg);
   width: 250px;
+  max-width: 50%;
   height: 250px;
   cursor: pointer;
 }
@@ -1027,6 +1030,11 @@ body.lock {
 @media screen and (max-width: 680px) {
   .macbook-section .macbook {
     width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .macbook__button {
+    height: 160px;
   }
 }
 /* End macbook style */
@@ -1092,5 +1100,3 @@ footer {
   }
 }
 /* End footer style */
-
-/*# sourceMappingURL=style.css.map */
