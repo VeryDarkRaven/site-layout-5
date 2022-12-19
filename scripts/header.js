@@ -5,6 +5,8 @@ window.addEventListener("scroll", function() {
 
   if (scroll > 0) {
     header.classList.add("header_translucent");
+    header.classList.remove("header_black");
+    console.log("xyi");
   } else {
     header.classList.remove("header_translucent");
   }
@@ -17,7 +19,7 @@ function headerHover () {
   header.onmouseover = () => {
     scroll = window.pageYOffset;
 
-    if (scroll > 0) {
+    if (scroll > 0 && !header.classList.contains("header_active")) {
       header.classList.remove("header_translucent");
       header.classList.add("header_black");
     }
@@ -26,7 +28,7 @@ function headerHover () {
   header.onmouseout = () => {
     scroll = window.pageYOffset;
 
-    if (scroll > 0) {
+    if (scroll > 0 && !header.classList.contains("header_active")) {
       header.classList.remove("header_black");
       header.classList.add("header_translucent");
     }
@@ -77,11 +79,12 @@ function burgerClick () {
     burger.classList.toggle("header__burger_active");
     body.classList.toggle("lock");
     header.classList.toggle("header_active");
+    header.classList.remove("header_translucent");
 
     let scroll = window.pageYOffset;
 
-    if (scroll > 0) {
-      header.classList.add("header_translucent");
+    if (scroll > 0 && !header.classList.contains("header_active")) {
+      header.classList.toggle("header_translucent");
       header.classList.remove("header_black");
     }
   }
