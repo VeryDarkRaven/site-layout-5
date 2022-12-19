@@ -152,7 +152,6 @@ function frontSectionFullHeightCalc () {
   const frontBlock = document.querySelector(".front");
   const container = frontBlock.querySelector(".container");
 
-  const header = document.querySelector("header");
   const downButton = document.querySelector(".down-button");
 
   let contentHeight = 0;
@@ -163,9 +162,7 @@ function frontSectionFullHeightCalc () {
     }
   }
   
-  frontBlock.style.height = contentHeight + (header.clientHeight * 3) + downButton.clientHeight + "px";
-
-  document.querySelector(".front__text").querySelector("h1").textContent = frontBlock.style.height;
+  frontBlock.style.height = contentHeight + (downButton.clientHeight * 4) + "px";
 }
 
 frontSectionFullHeightCalc();
