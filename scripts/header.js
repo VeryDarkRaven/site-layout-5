@@ -6,7 +6,6 @@ window.addEventListener("scroll", function() {
   if (scroll > 0) {
     header.classList.add("header_translucent");
     header.classList.remove("header_black");
-    console.log("xyi");
   } else {
     header.classList.remove("header_translucent");
   }
