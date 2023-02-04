@@ -33,6 +33,19 @@ function dropdownClick () {
 
 dropdownClick();
 
+function closingDropdown () {
+  const form = document.querySelector(".front__form");
+  const dropdownContainer = form.querySelector("ul");
+
+  document.addEventListener("click", function(e) {
+    if (!dropdownContainer.contains(e.target)) {
+      dropdownContainer.classList.remove("dropdown_active");
+    }
+  })
+}
+
+closingDropdown();
+
 
 
 // placeholder

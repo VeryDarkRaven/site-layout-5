@@ -1,15 +1,23 @@
 // header bg
-window.addEventListener("scroll", function() {
+// document.addEventListener("DOMContentLoaded", function() {});
+
+function headerScroll () {
   const header = document.querySelector("header");
   let scroll = window.pageYOffset;
 
-  if (scroll > 0) {
+  localStorage.setItem("scrollSave", scroll);
+  let scrollSave = localStorage.getItem("scrollSave");
+
+  if (scrollSave > 0) {
     header.classList.add("header_translucent");
     header.classList.remove("header_black");
   } else {
     header.classList.remove("header_translucent");
   }
-});
+}
+
+document.addEventListener("DOMContentLoaded", headerScroll);
+window.addEventListener("scroll", headerScroll);
 
 function headerHover () {
   const header = document.querySelector("header");
